@@ -8,7 +8,7 @@ COPY go.sum ./
 
 RUN sleep 60; go mod download
 
-COPY ./*.go ./
+COPY ./main.go ./
 
 RUN go build -o /docker-gs-ping
 
