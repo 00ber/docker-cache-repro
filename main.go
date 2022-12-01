@@ -8,7 +8,7 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 )
 
-// Test
+// Test cache
 func main() {
 
 	e := echo.New()
