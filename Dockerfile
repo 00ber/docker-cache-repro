@@ -8,6 +8,8 @@ COPY go.sum ./
 
 RUN sleep 60; go mod download
 
+RUN echo 'Test cache invalidation'
+
 COPY ./main.go ./
 
 RUN go build -o /docker-gs-ping
