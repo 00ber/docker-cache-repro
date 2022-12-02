@@ -29,7 +29,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: false
-          load: true
+          load: false
           file: Dockerfile
           tags: myserver:latest
           cache-from: type=gha,scope=build-${{ matrix.target }}
