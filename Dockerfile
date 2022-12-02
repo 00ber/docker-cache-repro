@@ -6,7 +6,7 @@ COPY go.mod ./
 
 COPY go.sum ./
 
-RUN sleep 60; go mod download
+RUN go mod download -x
 
 RUN echo 'Test cache invalidation'
 
